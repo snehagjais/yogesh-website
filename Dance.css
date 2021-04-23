@@ -1,0 +1,318 @@
+body {
+	overflow-x: hidden;
+}
+
+.wing{
+	font-size:15px;
+	font-family:Jokerman;
+	padding-top:-10px;
+	margin-left: 100px;
+}
+
+.nav{
+	height:20%;
+	background :black;
+	font-family:segoe script;
+	font-size:30px;
+	color:#e0f2f1;
+}
+
+.navg{
+	font-family:calibri;
+	font-size:25px;
+}
+
+.detail{
+	font-size:20px;
+	font-family:calibri;
+    padding-left:150px;
+	margin-top:10px;
+}
+
+p{
+	float:right;
+}
+
+.pic{
+	height:110px;
+	padding-left:10%;
+	margin-top:10px;
+	float:left;
+}
+
+label{
+	padding-left:10px;
+	margin-top:20px; 
+	padding-top:20px;
+}
+.mar{
+	height:50%;
+	background-image: url('bgb1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.mid{
+	height:90%;
+	background-image: url('1move (2).jpg');
+	color:white;
+}
+
+
+.photo{
+	height:90%;
+	width:20%;
+}
+
+.mn{
+	height:90%;
+	width:100%;
+	padding-right:10%;
+	padding-top:30px;
+}
+
+.ln{
+	font-family:inherit;
+	font-size:20px;
+	width: 60%;
+	margin-left: 10%;
+	padding-top:130px;
+}
+
+marquee{
+	padding-top:30px;
+}
+
+.dicon {
+	height: 250px;
+	width:80%;
+	padding-top:30px;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.msg {
+	margin-top: 20px;
+	font-family: Algerian;
+	font-size: 24px;
+	color: #3f1227;
+	font-style: italic;
+    align-self: center;
+}
+
+.rang{
+	background:#80808026;
+	margin-left:5px;
+	width: 100%;
+}
+
+.chor{
+	height:400px;
+}
+
+.qts{
+	padding-left:10%;
+	font-size:24px;
+}
+
+.ltn{
+	padding-top:3%;
+	background-image: url('bgn.jpg');
+	color: honeydew;
+}
+
+.nm{
+	margin-bottom:5px;
+	font-size:24px;
+	float:left;
+}
+
+.chg {
+	padding-left:10%;
+}
+
+li{
+	color:#093049;
+}
+
+.end{
+	margin-top:5px;
+	background-image: url('bgc.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.add{
+	font-size:20px;
+	padding-top:25px;
+	padding-left:20%;
+}
+
+.cont{
+	padding-top:25px;
+	font-size:20px;
+}
+
+.link{
+	margin-top: 5%;
+	font-size:20px;
+	float: right;
+	color: black;
+	text-decoration: none;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 20px;
+}
+
+.marquee img {
+  display: inline-block;
+  position: relative;
+  left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee img:nth-child(0) {
+  animation-delay: 0s;
+}
+.marquee img:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.marquee img:nth-child(2) {
+  animation-delay: 1s;
+}
+.marquee img:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.marquee img:nth-child(4) {
+  animation-delay: 2s;
+}
+.marquee img:nth-child(5) {
+  animation-delay: 2.5s;
+}
+.marquee img:nth-child(6) {
+  animation-delay: 3s;
+}
+.marquee img:nth-child(7) {
+  animation-delay: 3.5s;
+}
+
+@keyframes marquee {
+  0%   { left: 100%; }
+  100% { left: -100%; }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*[class*="col-"] {
+  float: left;
+  padding: 15px;
+}*/
+
+/* For mobile phones: */
+[class*="col"] {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.nav{
+		height:40%;
+		background :black;
+		font-family:segoe script;
+		font-size:30px;
+		color:#e0f2f1;
+	}
+	
+	.navg{
+		font-family:calibri;
+		font-size:20px;
+		margin-left: 15%;
+	}
+	
+	.pic{
+		height:110px;
+		padding-left:7%;
+		margin-top:10px;
+		float:left;
+	}
+	
+	.mid{
+		height:130%;
+		background-image: url('1move (2).jpg');
+		color:white;
+	}
+	
+	.ln{
+		font-family:inherit;
+		font-size:20px;
+		width: 100%;
+		height: 30%;
+		margin-left: 5%;
+		padding-top:10px;
+	}
+	
+	.mn{
+		height:80%;
+		width:90%;
+		padding-left:10%;
+		margin-top:3%;
+	}
+	
+	.chg {
+		padding-left:20%;
+	}
+	
+	.cont{
+		padding-left:20%;
+		padding-top:25px;
+		font-size:20px;
+	}
+	
+	.bot {
+		padding-left:20%;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}

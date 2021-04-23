@@ -1,0 +1,166 @@
+<html>
+<head> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="buis.css"></link>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Business</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+function scrollToContact() {
+	var contactDivTop = document.getElementById("contact").offsetTop;
+	$("body").scrollTop(contactDivTop);
+}
+
+function scrollToService() {
+	window.location.href = "dance.html";
+}
+
+function sendEmail() {
+  Email.send({
+	Host: "smtp.gmail.com",
+	Username: "man.mgs2010@gmail.com",
+	Password: "pamapura4",
+	To: 'snehagjais88@gmail.com',
+	From: "man.mgs2010@gmail.com",
+	Subject: "Sending Email using javascript",
+	Body: "Well that was easy!!",
+  })
+	.then(function (message) {
+	  alert("Message sent successfully")
+	});
+}
+</script>
+
+</head>
+<body> 
+ <div class=" row nav align-items-center">
+	 <div class="col-sm-8">
+		<div class="row align-items-center">
+		<img class="col-4 logo" alt="logo" src="logo.jpeg"></img>
+		<h2 class="col-4">YOGESH MAURYA</h2>
+		</div>
+	</div>
+	<div class="col-sm-4 navg">
+		<strong class="cursor"> Business Coach </strong> |
+		<strong class="cursor" onclick="scrollToService();"> Other Service</strong> |
+		<strong class="cursor" onclick="scrollToContact();"> Contact</strong>
+	</div>
+  </div>
+  
+  <div class="mid">
+	<div class="content">
+		<p class="ln">Business coach, <br>
+		usually to music and within a given space, <br>
+		for the purpose of expressing an idea or emotion, <br>
+		releasing energy, or simply taking delight in the movement itself.<br><br>
+
+		It’s not just a matter of giving tips or polishing. <br>
+		It’s about turning dancer inside-out so that <br>even they are shocked by what they can perform.</p>
+		<img class="mn" src="buis1.jpg"></img>
+	</div>
+</div>
+
+	<div class="row rang">
+		<div class="col-sm-4 text-center">
+			<img class="dicon" src="health2.jpeg"></img></br>
+			<span>To keep the body in good health is a duty…otherwise we shall not be able to keep the mind strong and clear. </span>
+		</div>
+		<div class="col-sm-4 text-center">
+			<img class="dicon" src="lead.jpg"></img></br>
+			<span>Before you are a leader, success is all about growing yourself. When you become a leader, success is all about growing others.</span>
+		</div>
+		<div class="col-sm-4 text-center">
+			<img class="dicon" src="buisness2.jpg"></img></br>
+			<span>The secret of change is to focus all your energy not on fighting the old but on building the new.</span>
+		</div>
+	</div>
+	<div class="row rang">
+		<div class="col-sm-4 text-center">
+			<img class="dicon" src="e2.jpg"></img></br>
+			<span>All our dreams can come true, if we have the courage to pursue them. </span>
+		</div>
+		<div class="col-sm-4 text-center">
+			<img class="dicon" src="sk2.jpg"></img></br>
+			<span>Schooling doesn't assure employment but skill does.</span>
+		</div>
+		<div class="col-sm-4 text-center">
+			<img class="dicon" src="mi3.jpg"></img></br>
+			<span>The mind has a powerful way of attracting things that are in harmony with it, good and bad.</span>
+		</div>
+	</div>
+	
+	<div id="contact" class="end">
+		<div class="row align-items-center">	
+			<p class="col-sm-1"></p>
+			<p class="col-sm-3 add"><strong>ADDRESS :</strong><br>
+				Ward No. 12, CIRCUS ROAD <br>
+				VRINDAVAN COLONY <br>
+				MUGHALSARAI<br>
+			</p>
+			<p class="col-sm-2 cont"><strong>CONTACT NO. :</strong><br>
+				9616013035 </br>
+				9565654111
+			</p>
+			
+			<div class="col-sm-3">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="https://www.instagram.com/officialyogesh11/" class="fa fa-instagram"></a>
+			</div>
+			
+			<div class="col-sm-2">
+				<div class="row text-left end-btn">
+					<button type="button" class="col btn btn-info" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Send Message</button>
+					<br></br>
+					<a class="col email btn btn-info email-btn" href="mailto:someone@example.com">
+						<button type="button" class="col btn btn-info">Send Email</button>
+					</a>
+				</div>
+			</div>
+			<p class="col-sm-1"></p>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">New message</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<form>
+			  <div class="form-group">
+				<label for="name" class="col-form-label">Sender Name:</label>
+				<input type="text" class="form-control" id="name">
+			  </div>
+			  <div class="form-group">
+				<label for="contactNo" class="col-form-label">Contact Number:</label>
+				<input type="number" class="form-control" id="contactNo">
+			  </div>
+			  <div class="form-group">
+				<label for="message-text" class="col-form-label">Message:</label>
+				<textarea class="form-control" id="message-text"></textarea>
+			  </div>
+			</form>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary" onclick="sendEmail();">Send message</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</body>
+</html>
