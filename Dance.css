@@ -238,7 +238,7 @@ li{
 	
 	.navg{
 		font-family:calibri;
-		font-size:20px;
+		font-size:14px;
 		margin-left: 2%;
 	}
 	
@@ -254,14 +254,14 @@ li{
 	}
 	
 	.mid{
-		height:280%;
+		height:100%;
 		background-image: url('1move (2).jpg');
 		color:white;
 	}
 	
 	.ln{
 		font-family:inherit;
-		font-size:20px;
+		font-size:16px;
 		width: 90%;
 		height: 30%;
 		margin-left: 2%;
@@ -275,7 +275,7 @@ li{
 	}
 	
 	.mn{
-		height:80%;
+		height:50%;
 		width:90%;
 		padding-left:10%;
 		margin-top:3%;
@@ -287,6 +287,11 @@ li{
 	
 	.nm {
 		font-size: 20px;
+	}
+	
+	.photo{
+		height:90%;
+		width:80%;
 	}
 	
 	.cont{
