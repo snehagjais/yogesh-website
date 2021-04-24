@@ -45,6 +45,7 @@ label{
 	margin-top:20px; 
 	padding-top:20px;
 }
+
 .mar{
 	height:50%;
 	background-image: url('bgb1.jpg');
@@ -140,7 +141,7 @@ li{
 	margin-top:5px;
 	background-image: url('bgc.jpg');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 150%;
 }
 
 .add{
@@ -238,18 +239,22 @@ li{
 	.navg{
 		font-family:calibri;
 		font-size:20px;
-		margin-left: 15%;
+		margin-left: 2%;
 	}
 	
 	.pic{
 		height:110px;
-		padding-left:7%;
+		padding-left:3%;
 		margin-top:10px;
 		float:left;
 	}
 	
+	label{
+		font-size:20px;
+	}
+	
 	.mid{
-		height:130%;
+		height:280%;
 		background-image: url('1move (2).jpg');
 		color:white;
 	}
@@ -257,10 +262,16 @@ li{
 	.ln{
 		font-family:inherit;
 		font-size:20px;
-		width: 100%;
+		width: 90%;
 		height: 30%;
-		margin-left: 5%;
+		margin-left: 2%;
+		margin-right: 2%;
 		padding-top:10px;
+	}
+	
+	.qts {
+		padding-left: 5%;
+		padding-right: 5%
 	}
 	
 	.mn{
@@ -271,7 +282,11 @@ li{
 	}
 	
 	.chg {
-		padding-left:20%;
+		padding-left:15%;
+	}
+	
+	.nm {
+		font-size: 20px;
 	}
 	
 	.cont{

@@ -122,6 +122,10 @@ a:hover {
 		padding-top:30px;
 	}
 	
+	.mn {
+		width: 100%;
+	}
+	
 	.end{
 		margin-top:5px;
 		background-color: #786262c2;
@@ -137,7 +141,7 @@ a:hover {
 	}
 	
 	.end-btn {
-		padding-right: 30%;
+		padding-right: 22%;
 	}
 	
 	.rang span {
